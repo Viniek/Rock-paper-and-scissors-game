@@ -1,80 +1,82 @@
-.game{
-    background-color:#a3d841;
-    margin-right:20%;
-    margin-left:20%
+html {
+    font-size: 60.5%;
 }
-.computer{
+
+body {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-container {
+    background-color: #a3d841;
+    margin: 0 20%;
+}
+
+.computer-section {
+    display: flex;
     align-items: center;
-    margin-left:43%;
-    margin-right:38%;
-    padding:20px;
+    justify-content: center;
+    padding: 20px;
 }
-.scissorsa{
-    border:1px dashed black;
-    margin:1px;
-    
+
+.hand {
+    border: 1px dashed black;
+    margin: 1px;
 }
-.yellow{
+
+.result-section {
     background-color: yellow;
     font-weight: bolder;
-    padding-top:10px;
-    padding-bottom:10px;
-    
+    padding: 10px 0;
 }
-#yellowp{
-    margin-left: 40%;
-    font-size: x-large;
 
+.result-text {
+    text-align: center;
+    font-size: x-large;
 }
-.player{
+
+.player-section {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:10%;
-     
-   
+    margin-left: 10%;
 }
-#playerp{
-    margin-left: 40%; 
+
+.player-text {
+    text-align: center;
+    font-size: x-large;
 }
-.scissorsb{
-    border:1px dashed black;
-    margin:2px;
-    margin-left:40%;
-    margin-right:50%;
+
+.hand {
+    border: 1px dashed black;
+    margin: 2px;
 }
-.chances{
+
+.choices {
     display: flex;
     flex-direction: row;
-    gap:2px;
-    margin-left:30%;
+    gap: 2px;
+    justify-content: center;
+    margin: 0 auto;
 }
-.rock{
-    background-color: rgba(255,255,255);
-    margin:2px;
-    border-color: white;
-    
+
+.choice {
+    background-color: white;
+    margin: 2px;
+    border: 2px solid white;
+    text-align: center;
 }
-.paper{
-    background-color: rgba(255,255,255);
-    margin:2px;
-    border-color: white;
-   
-}
-.scissors{
-    background-color: rgba(255,255,255);
-    margin:2px;
-    border-color: white;
-    
-}
-#computer{
-   
-    
-}
-#iconc{
-    margin:1px dotted black;
-    align-content:center;
-   
-}
-.iconpp{
-    align-items: center;
+
+.icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.2;
+    font-size: inherit;
 }
