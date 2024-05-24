@@ -1,0 +1,80 @@
+.game{
+    background-color:#a3d841;
+    margin-right:20%;
+    margin-left:20%
+}
+.computer{
+    align-items: center;
+    margin-left:43%;
+    margin-right:38%;
+    padding:20px;
+}
+.scissorsa{
+    border:1px dashed black;
+    margin:1px;
+    
+}
+.yellow{
+    background-color: yellow;
+    font-weight: bolder;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+#yellowp{
+    margin-left: 40%;
+    font-size: x-large;
+
+}
+.player{
+    justify-content: center;
+    align-items: center;
+    margin-left:10%;
+     
+   
+}
+#playerp{
+    margin-left: 40%; 
+}
+.scissorsb{
+    border:1px dashed black;
+    margin:2px;
+    margin-left:40%;
+    margin-right:50%;
+}
+.chances{
+    display: flex;
+    flex-direction: row;
+    gap:2px;
+    margin-left:30%;
+}
+.rock{
+    background-color: rgba(255,255,255);
+    margin:2px;
+    border-color: white;
+    
+}
+.paper{
+    background-color: rgba(255,255,255);
+    margin:2px;
+    border-color: white;
+   
+}
+.scissors{
+    background-color: rgba(255,255,255);
+    margin:2px;
+    border-color: white;
+    
+}
+#computer{
+   
+    
+}
+#iconc{
+    margin:1px dotted black;
+    align-content:center;
+   
+}
+.iconpp{
+    align-items: center;
+}
