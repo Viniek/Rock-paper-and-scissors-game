@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".rock").addEventListener("click", () => playGame("✊"));
     document.querySelector(".paper").addEventListener("click", () => playGame("✋"));
     document.querySelector(".scissors").addEventListener("click", () => playGame("✌️"));
+    document.querySelector(".reset-button").addEventListener("click", resetScores);
 
     function playGame(playerChoice) {
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -43,5 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         computerScoreEl.textContent = computerScore;
         playerScoreEl.textContent = playerScore;
+    }
+
+    function resetScores() {
+        computerScore = 0;
+        playerScore = 0;
+        computerScoreEl.textContent = computerScore;
+        playerScoreEl.textContent = playerScore;
+        resultTextEl.textContent = "Draw";
+        computerHandEl.textContent = "✌️";
+        playerHandEl.textContent = "✌️";
     }
 });

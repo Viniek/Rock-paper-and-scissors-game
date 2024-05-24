@@ -15,13 +15,20 @@ body {
 .game-container {
     background-color: #a3d841;
     margin: 0 20%;
+    text-align: center;
 }
 
-.computer-section {
+.computer-section, .player-section {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+.computer-text, .player-text {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .hand {
@@ -38,23 +45,6 @@ body {
 .result-text {
     text-align: center;
     font-size: x-large;
-}
-
-.player-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-}
-
-.player-text {
-    text-align: center;
-    font-size: x-large;
-}
-
-.hand {
-    border: 1px dashed black;
-    margin: 2px;
 }
 
 .choices {
@@ -79,4 +69,19 @@ body {
     text-align: center;
     line-height: 1.2;
     font-size: inherit;
+}
+
+.scores {
+    margin: 20px 0;
+}
+
+.reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: large;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
