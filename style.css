@@ -1,98 +1,92 @@
 html {
-    font-size: 60.5%;
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
     font-family: "Press Start 2P", sans-serif;
-}
-
-* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
 }
 
 .game-container {
     background-color: #a3d841;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 60rem; /* maximum width */
+    box-sizing: border-box;
 }
 
-.computer-section, .player-section {
+nav {
     display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.scores {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+}
+
+.computer-section, .player-section, .result-section, .choices {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-}
-.nav{
-    display: flex;
-    flex-direction: row;
-    gap:4px;
-}
-.scores{
-    display: flex;
-    flex-direction: row;
-    gap:2px;
-    padding-top:1px;
-}
-
-.computer-text, .player-text {
-    font-size: large;
-    font-weight: bold;
-    margin-bottom: 10px;
+    flex: 1;
 }
 
 .hand {
     border: 1px dashed black;
     margin: 1px;
+    padding: 1rem;
 }
 
 .result-section {
     background-color: yellow;
     font-weight: bolder;
-    padding: 10px 0;
+    padding: 1rem 0;
+    
 }
 
 .result-text {
-    text-align: center;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 .choices {
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 1rem;
     justify-content: center;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .choice {
     background-color: white;
-    margin: 2px;
+    margin: 0.5rem;
     border: 2px solid white;
     text-align: center;
     flex: 1;
+    padding: 1rem;
 }
 
 .icon {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 1.2;
-    font-size: inherit;
-}
-
-.scores {
-    margin: 20px 0;
+    font-size: 9rem;
 }
 
 .reset-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: large;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
     background-color: #f44336;
     color: white;
     border: none;
@@ -100,109 +94,89 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .game-container {
-        margin: 0 10%;
-    }
-    html{
-        font-size: 95%;
-        font-weight: bolder;
+    html {
+        font-size: 56.25%; /* 1rem = 9px */
     }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     html {
-        font-size: 95%;
-        font-weight:bolder;
-    }
-
-    .game-container {
-        margin: 0 5%;
-    }
-
-    .computer-section, .player-section {
-        padding: 10px;
+        font-size: 50%; /* 1rem = 8px */
     }
 
     .result-text {
-        font-size: large;
+        font-size: 1.8rem;
     }
+}
 
-    .choices {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .game-container {
+        padding: 1rem;
     }
 
     .choice {
-        margin: 5px 0;
+        flex: 1 1 30%;
+    }
+
+    .icon {
+        font-size: 8rem;
     }
 
     .reset-button {
-        font-size: medium;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 540px) {
     html {
-        font-size: 50%;
+        font-size: 43.75%; /* 1rem = 7px */
     }
 
     .result-text {
-        font-size: medium;
+        font-size: 1.6rem;
+    }
+
+    .icon {
+        font-size: 7rem;
     }
 
     .reset-button {
-        font-size: small;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 414px) {
     html {
-        font-size: 95%;
-        font-weight: bold;
+        font-size: 37.5%; /* 1rem = 6px */
     }
 
     .result-text {
-        font-size: small;
+        font-size: 1.4rem;
+    }
+
+    .icon {
+        font-size: 6rem;
     }
 
     .reset-button {
-        font-size: smaller;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 375px) {
     html {
-        font-size: 90%;
-        height:500px;
+        font-size: 31.25%; /* 1rem = 5px */
     }
 
     .result-text {
-        font-size: small;
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        font-size: 5rem;
     }
 
     .reset-button {
-        font-size: small;
-    }
-    .choices{
-        height:30%;
-    }
-}
-@media (max-width: 430px) {
-    html {
-        font-size: 95%;
-        font-weight: bolder;
-    }
-}
-@media (max-width: 1024px) {
-  
-    html{
-        font-size: 105%;
-        font-weight: bolder;
-    }
-}
-@media (max-width: 912px) {
-    html{
-        font-size: 95%;
-        font-weight: bolder;
+        font-size: 0.8rem;
     }
 }
