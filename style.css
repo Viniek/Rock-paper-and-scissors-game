@@ -151,7 +151,8 @@ body {
 
 @media (max-width: 414px) {
     html {
-        font-size: 45%;
+        font-size: 95%;
+        font-weight: bold;
     }
 
     .result-text {
