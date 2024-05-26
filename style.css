@@ -105,9 +105,11 @@ body {
     }
 }
 
+
 @media (max-width: 768px) {
     html {
-        font-size: 55%;
+        font-size: 95%;
+        font-weight:bolder;
     }
 
     .game-container {
@@ -167,6 +169,7 @@ body {
 @media (max-width: 375px) {
     html {
         font-size: 90%;
+        height:500px;
     }
 
     .result-text {
@@ -175,5 +178,14 @@ body {
 
     .reset-button {
         font-size: small;
+    }
+    .choices{
+        height:30%;
+    }
+}
+@media (max-width: 430px) {
+    html {
+        font-size: 95%;
+        font-weight: bolder;
     }
 }
