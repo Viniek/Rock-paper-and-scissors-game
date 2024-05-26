@@ -14,7 +14,8 @@ body {
 
 .game-container {
     background-color: #a3d841;
-    margin: 0 20%;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
@@ -23,6 +24,17 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+.scores{
+    display: flex;
+    flex-direction: row;
+    gap:2px;
+    padding-top:1px;
 }
 
 .computer-text, .player-text {
@@ -60,6 +72,7 @@ body {
     margin: 2px;
     border: 2px solid white;
     text-align: center;
+    flex: 1;
 }
 
 .icon {
@@ -84,4 +97,82 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .game-container {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .game-container {
+        margin: 0 5%;
+    }
+
+    .computer-section, .player-section {
+        padding: 10px;
+    }
+
+    .result-text {
+        font-size: large;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+
+    .choice {
+        margin: 5px 0;
+    }
+
+    .reset-button {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 50%;
+    }
+
+    .result-text {
+        font-size: medium;
+    }
+
+    .reset-button {
+        font-size: small;
+    }
+}
+
+@media (max-width: 414px) {
+    html {
+        font-size: 45%;
+    }
+
+    .result-text {
+        font-size: small;
+    }
+
+    .reset-button {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 90%;
+    }
+
+    .result-text {
+        font-size: small;
+    }
+
+    .reset-button {
+        font-size: small;
+    }
 }
